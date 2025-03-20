@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WISHPLAYLIST</title>
+    <link rel="stylesheet" href="C:\Users\Admin\Desktop\음악 추천\2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎶 시대별 한국 음악 추천 🎶</h1>
+        <p>년도를 선택해주세요!</p>
+        
+        <form id="music-form">
+            <div class="genre-options">
+                <label class="genre-option">
+                    <input type="radio" name="genre" value="pop">
+                    <span class="label-text">1990</span>
+                </label>
+                <label class="genre-option">
+                    <input type="radio" name="genre" value="rock">
+                    <span class="label-text">2000</span>
+                </label>
+                <label class="genre-option">
+                    <input type="radio" name="genre" value="hiphop">
+                    <span class="label-text">2010</span>
+                </label>
+                <label class="genre-option">
+                    <input type="radio" name="genre" value="classical">
+                    <span class="label-text">2020</span>
+                </label>
+            </div>
+            <button type="button" onclick="recommendMusic()">추천 받기</button>
+        </form>
+        
+        <div id="recommendations" class="recommendations" style="display: none;">
+            <h2>🎧 추천 음악 🎧</h2>
+            <ul id="music-list"></ul>
+            <p>유튜브 링크:</p>
+            <ul id="youtube-links"></ul>
+        </div>
+    </div>
+    <script src="C:\Users\Admin\Desktop\음악 추천\3.js"></script>
+</body>
+</html>
